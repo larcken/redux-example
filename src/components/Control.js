@@ -1,9 +1,4 @@
-import React, { Component, PropTypes } from 'react';
-const propTypes = {
-  onPlus: PropTypes.func,
-  onSubtract: PropTypes.func,
-  onRandomizeColor: PropTypes.func
-};
+import React, { Component } from 'react';
 
 function createWarning(funcName) {
   return () => console.warn(funcName + 'is not defined');
@@ -28,6 +23,5 @@ class Control extends Component {
         );
     }
 }
-Control.propTypes = propTypes;
-Control.defaultProps = defaultProps;
+
 export default Control;
